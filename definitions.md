@@ -6,15 +6,6 @@ The vanishing gradient problem occurs during the training of deep neural network
 
 However, in very deep networks, repeated multiplication of gradients (which are often less than one) through many layers can result in extremely small values. When this happens, the gradients in the earlier layers become so small that the weights are updated minimally, if at all, effectively stalling the learning process.
 
-Consider a neural network with \(L\) layers. The gradient of the loss \(L\) with respect to the weights \(w_l\) at layer \(l\) is calculated as:
-
-\[ 
-\frac{\partial L}{\partial w_l} = \frac{\partial L}{\partial a_L} \cdot \frac{\partial a_L}{\partial z_L} \cdot \frac{\partial z_L}{\partial a_{L-1}} \cdot \ldots \cdot \frac{\partial a_{l+1}}{\partial z_{l+1}} \cdot \frac{\partial z_{l+1}}{\partial a_l} \cdot \frac{\partial a_l}{\partial z_l} \cdot \frac{\partial z_l}{\partial w_l} 
-\]
-
-Here, \(a_l\) represents the activations and \(z_l\) represents the weighted sum of inputs at layer \(l\). Each term \(\frac{\partial z}{\partial a}\) and \(\frac{\partial a}{\partial z}\) in the chain is typically less than 1. For deep networks (large \(L\)), this product can become exceedingly small, leading to vanishing gradients.
-
-
 ## Network Weight Perturbation
 
 This method involves altering the weights of a neural network slightly to create different models, which helps avoid local minima during training and enhances model robustness.
