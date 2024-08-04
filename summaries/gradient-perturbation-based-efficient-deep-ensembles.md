@@ -12,4 +12,7 @@ PEG takes a **pre-trained** base model and applies gradient based perturbations 
 
 $$
 y_t=0
+for i=1 \ldots S
+Draw a mini-batch B_i of K points from V uniformly at random
+[\theta]_i = \theta - \eta
 $$
