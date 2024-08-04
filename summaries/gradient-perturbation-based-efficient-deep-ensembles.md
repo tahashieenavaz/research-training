@@ -10,4 +10,4 @@ Training ensembles could be extremely computationally expensive thus in this art
 
 PEG takes a **pre-trained** base model and applies gradient based perturbations to create an ensemble. It has to be said that it does this with restarts, more specifically perturbations are not applied in succession but rather, all perturbations are applied to the same base model.
 
-<img src="images/1.png" style="border-radius: 1rem" />
+<img src="images/1.png" style="border-radius: 1rem" width="300" />
