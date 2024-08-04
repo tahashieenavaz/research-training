@@ -62,3 +62,11 @@ AlexNet is a pioneering convolutional neural network that significantly contribu
 
 - First deep network to achieve breakthrough performance on ImageNet.
 - Uses ReLU activation and dropout to improve training.
+
+## Batch Normalization
+
+Batch normalization is a technique used to improve the training of deep neural networks by reducing the internal covariate shift. It normalizes the inputs of each layer so that they have a mean of zero and a variance of one, and it does this for each mini-batch of data.
+
+- Internal Covariate Shift: As training progresses, the distribution of each layer’s inputs changes, which can slow down training. This phenomenon is called internal covariate shift. By normalizing the inputs, batch normalization reduces this shift, making the training faster and more stable.
+- Gradient Flow: Normalizing inputs helps maintain gradients in a reasonable range, preventing issues like vanishing and exploding gradients, which can hinder learning.
+- Higher Learning Rates: Batch normalization allows for higher learning rates, which can accelerate the training process.
