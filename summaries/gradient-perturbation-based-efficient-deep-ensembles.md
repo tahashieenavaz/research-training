@@ -10,9 +10,4 @@ Training ensembles could be extremely computationally expensive thus in this art
 
 PEG takes a **pre-trained** base model and applies gradient based perturbations to create an ensemble. It has to be said that it does this with restarts, more specifically perturbations are not applied in succession but rather, all perturbations are applied to the same base model.
 
-$$
-y_t=0
-for i=1 \ldots S
-Draw a mini-batch B_i of K points from V uniformly at random
-[\theta]_i = \theta - \eta
-$$
+<img src="images/1.png" />
