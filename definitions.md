@@ -70,3 +70,11 @@ Batch normalization is a technique used to improve the training of deep neural n
 - Internal Covariate Shift: As training progresses, the distribution of each layer’s inputs changes, which can slow down training. This phenomenon is called internal covariate shift. By normalizing the inputs, batch normalization reduces this shift, making the training faster and more stable.
 - Gradient Flow: Normalizing inputs helps maintain gradients in a reasonable range, preventing issues like vanishing and exploding gradients, which can hinder learning.
 - Higher Learning Rates: Batch normalization allows for higher learning rates, which can accelerate the training process.
+
+## Monte Carlo Dropout
+
+Monte Carlo Dropout (MC Dropout) is a technique used in deep learning to estimate the uncertainty in model predictions. It leverages dropout, a regularization method typically used during training, at inference time to perform multiple stochastic forward passes. This allows the model to generate a distribution of predictions, from which uncertainty can be quantified.
+
+- Uncertainty Estimation: In many real-world applications, knowing how confident a model is in its predictions is crucial. MC Dropout provides a way to estimate this uncertainty.
+- Robustness: Models that can quantify their uncertainty are better at identifying when they are likely to make incorrect predictions, which can improve decision-making processes.
+- Regularization: Dropout helps prevent overfitting during training by randomly setting some neurons' outputs to zero. By applying it during inference as well, MC Dropout leverages this randomness to create a distribution of predictions.
