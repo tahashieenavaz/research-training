@@ -1,3 +1,5 @@
+In this file, I am going to document all the concepts and architecture I faced during my research training on **deep learning ensembles**.
+
 - [Concepts](#concepts)
   - [Vanishing Gradient Problem](#vanishing-gradient-problem)
   - [Network Weight Perturbation](#network-weight-perturbation)
