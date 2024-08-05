@@ -1,7 +1,7 @@
 In this file, I am going to document all the concepts and architecture I faced during my research training on **deep learning ensembles**.
 
 - [Concepts](#concepts)
-- [Perturbation](#perturbation)
+  - [Perturbation](#perturbation)
   - [Vanishing Gradient Problem](#vanishing-gradient-problem)
   - [Network Weight Perturbation](#network-weight-perturbation)
   - [Bagging](#bagging)
@@ -18,7 +18,7 @@ In this file, I am going to document all the concepts and architecture I faced d
 
 ## Concepts
 
-## Perturbation
+### Perturbation
 
 In mathematics, perturbation refers to a small change made to the input of a function or system. The concept is used to study how slight modifications can affect the behavior and properties of mathematical models and solutions. Here are some common contexts where perturbation is used:
 
