@@ -1,6 +1,7 @@
 In this file, I am going to document all the concepts and architecture I faced during my research training on **deep learning ensembles**.
 
 - [Concepts](#concepts)
+- [Perturbation](#perturbation)
   - [Vanishing Gradient Problem](#vanishing-gradient-problem)
   - [Network Weight Perturbation](#network-weight-perturbation)
   - [Bagging](#bagging)
@@ -16,6 +17,21 @@ In this file, I am going to document all the concepts and architecture I faced d
   - [AlexNet](#alexnet)
 
 ## Concepts
+
+## Perturbation
+
+In mathematics, perturbation refers to a small change made to the input of a function or system. The concept is used to study how slight modifications can affect the behavior and properties of mathematical models and solutions. Here are some common contexts where perturbation is used:
+
+- **Perturbation Theory**: This is a set of techniques for finding an approximate solution to a problem by starting from the exact solution of a related, simpler problem and adding corrections to it. It is widely used in various fields such as physics, engineering, and applied mathematics.
+- **Differential Equations**: Small changes in the coefficients or the terms of differential equations to study the stability and sensitivity of their solutions.
+- **Optimization**: Perturbations are used to understand the sensitivity of the optimal solution with respect to small changes in the parameters of the objective function or constraints.
+
+In deep learning, perturbations are often used in the following contexts:
+
+- **Adversarial Attacks**: Small, intentional changes made to the input data to deceive a machine learning model into making a wrong prediction. These are designed to be imperceptible to humans but can significantly affect the performance of the model.
+- **Data Augmentation**: Introducing slight variations to the training data (such as rotations, translations, and noise) to improve the robustness and generalization ability of the model. This technique helps the model to better handle variations and noise in real-world data.
+- **Regularization**: Perturbing the model parameters or inputs during training to prevent overfitting. Techniques such as dropout introduce randomness to the training process to improve the model's generalization capabilities.
+- **Sensitivity Analysis**: Studying how changes in the input or the model parameters affect the output to understand the robustness and stability of the neural network.
 
 ### Vanishing Gradient Problem
 
