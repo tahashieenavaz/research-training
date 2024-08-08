@@ -26,3 +26,15 @@ The proposed methods use noise in back projection similar to DCT-based augmentat
 <p align="center">
     <img src="images/3.png" />
 </p>
+
+<p align="center">
+    <img src="images/4.png" />
+</p>
+
+<p align="center">
+    <img src="images/5.png" />
+</p>
+
+<p align="center">
+    <img src="images/6.png" />
+</p>
