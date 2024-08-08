@@ -20,3 +20,9 @@ The PEP method creates ensembles by adding Gaussian random noise to the weights 
 - DCTb: Projects weights onto DCT space with small random noise (excluding the DC component), then applies inverse DCT.
 - PEPa: Similar to the original PEP but with a small amount of random noise.
 - PEPb: Similar to PEPa.
+
+The proposed methods use noise in back projection similar to DCT-based augmentations. They differ in how they search for new minima: DCTx and PEPx modify all parameters, while Dout zeroes out some parameters. PEPx applies noise to all parameters, while DCTx does so in the subspace. The process involves training a network for 20 epochs (netA), applying weight perturbations, then training for two more epochs to get netP. This is repeated five times to produce five netPs. The final output is the average of netA and the five netPs.
+
+<p align="center">
+    <img src="images/3.png" />
+</p>
